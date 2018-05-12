@@ -1,0 +1,222 @@
+/**********CSS organized alphabetically by:
+  element 
+  class
+  id*/
+
+/**********ELEMENTS**********/
+
+body {
+  font-family: 'Bree Serif', serif;
+  font-size: .8em;
+  margin: 30px auto;
+  max-width: 991px;
+}
+
+button {
+  padding: 6px 12px 0 12px;
+  flex: 1;
+}
+
+div .buttons {
+  display: flex;
+}
+
+footer {
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+  padding-bottom: 15px;
+  background-color: #FFFFCC;
+  border: 1px solid #839364;
+  border-radius: 10px;
+  max-width: 991px;
+}
+
+
+h1 {
+  text-align: center;
+  margin: 30px 30px 10px 30px;
+  font-size: 1.3em;
+}
+
+h2 {
+  font-size: .8em;
+}
+
+header {
+  margin: 0 30px;
+  text-align: left;
+  background-color: #FFFFCC;
+  color: #13480D;
+  width: 100%;
+  max-width: 991px;
+}
+
+hr {
+  color: #839364;
+  overflow: visible;
+  height: 30px;
+  border-style: solid;
+  border-color: #839364;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+hr:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #839364;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+label {
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+
+legend {
+  margin: 10px 0 20px 0;
+  font-family: 'Bree Serif', serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  text-align: center;
+}
+
+p {
+  padding: 0 0 4px 0;
+}
+
+table {
+  display: table;
+}
+
+td {
+  padding: 2px 15px;
+}
+
+th {
+  padding: 0 10px 20px;
+}
+
+/**********CLASSES**********/
+
+.col-md-4 {
+  flex: 1;
+}
+
+.container {
+  margin: 0 30px;
+  padding-top: 20px;
+  max-width: 991px;
+}
+
+.form-control {
+  flex: 1;
+}
+
+
+.form-horizontal {
+  display: flex;
+}
+
+/**********IDs**********/
+
+
+#banner {
+  display: flex;
+}
+
+#bannerCenter {
+  width: 40%;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  border-top: 5px solid #839364;
+  border-left: 5px solid #839364;
+  border-bottom: 5px solid #839364;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#bannerLeft {
+  width: 20%;
+  background-image: url('./../images/petsSmaller.png');
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+#bannerRight {
+  width: 40%;
+  padding: 40px 20px;
+    font-size: 1.5em;
+  line-height: 1.1em;
+  border-top: 5px solid #839364;
+  border-right: 5px solid #839364;
+  border-bottom: 5px solid #839364;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#destroy {
+  margin-left: 50px;
+}
+
+#inputFormWrapper {
+  flex: 1.5;
+  margin: 0 10px;
+}
+
+#instructions {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+#lifespanTable {
+  white-space: nowrap;
+  margin: 20px 0 0 38px;
+}
+
+#lifespanTableHeading {
+  margin: 20px 0 0 50px;
+}
+
+#lifespanTable th {
+  padding: 0 10px 20px;
+  text-decoration: underline;
+  vertical-align: bottom;
+}
+
+#lifespanTableWrapper {
+  flex: 1;
+  width: 100%;
+  margin: 0 0 0 25px;
+  padding-bottom: 15px;
+  background-color: #FFFFCC;
+  border: 2px solid #839364;
+  border-radius: 10px;
+}
+
+#upperPanel {
+  display: flex;
+}
+
+#results {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+/*   ( \
+       \ \
+       / /                |\\
+      / /     .-`````-.   / ^`-.
+      \ \    /         \_/  {|} `o
+       \ \  /   .---.   \\ _  ,--'
+        \ \/   /     \,  \( `^^^
+         \   \/\      (\  )
+          \   ) \     ) \ \
+           ) /__ \__  ) (\ \___
+          (___)))__))(__))(__)))*/
