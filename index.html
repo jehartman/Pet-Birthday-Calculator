@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -18,170 +17,162 @@
 
 <body>
 
-    <header>
-        <div id="banner">
-            <div class='banner' id='bannerLeft'>
-            </div>
-            <div class='banner' id='bannerCenter'>
-                <h1>Pet Birthday Calculator</h1>
-            </div>
-            <div class='banner' id='bannerRight'>
-                <h2>Humans enjoy on average 79 birthdays. Why shouldn't your pet get to celebrate just as often?</h2>
-            </div>
+  <header>
+    <div id="banner" class="parallax">
+      <div id="bannerLeft"></div>
+      <div class='banner' id='bannerRight'>
+        <div>
+          <h1>Pet Birthday Calculator</h1>
         </div>
-    </header>
+        <div>
+          <h2>Humans enjoy on average 79 birthdays. Why shouldn't your pet get to celebrate just as often? Use this calculator to determine the length of your pet's year, its age in pet years, and when its next birthday in pet years would be.</h2>
+        </div>
+      </div>
+    </div> 
+  </header>
 
-    <div class="container">
-        <div id="upperPanel">
-            <div class="wrapper" id="inputFormWrapper">
-                <div id='instructions'>
-                    <p>Enter your pet's birthday to generate its next birthday in pet years.
-                        <p>
-                            <p>Each new pet you enter will be added to the table below.
-                                <p>
-                </div>
-                <form>
-                    <div class="form-group" id='animalName'>
-                        <label class="col-md-4 control-label" for="animalName">Pet Name</label>
-                        <input id="nameInput" name="Animal Name" type="text" placeholder="" class="form-control input-md" required="true">
-                    </div>
-                    <div class="form-group" id='animalType'>
-                        <label class="col-md-4 control-label" for="animalType">Pet Type</label>
-                        <input id="typeInput" name="Animal Type" type="text" placeholder="" class="form-control input-md" required="true">
-                    </div>
-                    <div class="form-group" id='lifespan'>
-                        <label class="col-md-4 control-label" for="Animal Lifespan">Pet Life Expectancy (years)</label>
-                        <input id="lifespanInput" name="Animal Lifespan" type="number" placeholder="" class="form-control input-md" required="true">
-                    </div>
-                    <div class="form-group" id='birthday'>
-                        <label class="col-md-4 control-label" for="birthday">Pet Birthday</label>
-                        <input id="date" type="date" name="birthday" class="form-control input-md" required="true">
-                    </div>
-                    <div class='pull-left'>
-                        <div class="buttons">
-                            <label class="control-label" for="button1id"></label>
-                            <button id="submit" name="button1id" class="btn btn-success pull-left">Add a Pet</button>
-                            <br>
-                            <br>
-                            <br>
-                            <button id="destroy" name="button2id" class="btn btn-danger">Get Rid of All Your Pets Because They're Noisy</button>
-                        </div>
-                    </div>
-                </form>
+  <div class="container">
+    <div id="lowerPanel">
+      <!-- input form -->
+      <div class="wrapper" id="inputFormWrapper">
+        <div id='instructions'>
+            <p>Enter your pet's birthday to generate its next birthday in pet years. Each new pet you enter will be added to the table below.</p>
+        </div>
+        <form>
+          <div class="form-group" id='animalName'>
+            <label class="col-md-4 control-label" for="animalName">Pet Name</label>
+            <input id="nameInput" name="Animal Name" type="text" placeholder="" class="form-control input-md" required="true">
+          </div>
+          <div class="form-group" id='animalType'>
+            <label class="col-md-4 control-label" for="animalType">Pet Type</label>
+            <input id="typeInput" name="Animal Type" type="text" placeholder="" class="form-control input-md" required="true">
+          </div>
+          <div class="form-group" id='lifespan'>
+            <label class="col-md-4 control-label" for="Animal Lifespan">Pet Life Expectancy (years)</label>
+            <input id="lifespanInput" name="Animal Lifespan" type="number" placeholder="" class="form-control input-md" required="true">
+          </div>
+          <div class="form-group" id='birthday'>
+            <label class="col-md-4 control-label" for="birthday">Pet Birthday</label>
+            <input id="date" type="date" name="birthday" class="form-control input-md" required="true">
+          </div>
+          <div class='pull-left'>
+            <div class="buttons">
+            <label class="control-label" for="button1id"></label>
+
+              <button id="submit" name="button1id" class="btn btn-success pull-left">Add a Pet</button><br><br><br>
+              <button id="destroy" name="button2id" class="btn btn-danger">Get Rid of All Your Pets Because They're Noisy</button>
             </div>
-
-            <!-- lifespan table -->
-            <div id='lifespanTableWrapper'>
-                <p id='lifespanTableHeading'>Life Expectancy of Popular Pets</p>
-                <table id='lifespanTable'>
-                    <thead>
-                        <tr>
-                            <th>Pet</th>
-                            <th>Life Expectancy (years)</th>
-                        </tr>
-                    </thead>
-                    <tr>
-                        <td>Canary</td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>Cat</td>
-                        <td>21</td>
-                    </tr>
-                    <tr>
-                        <td>Cockatoo</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>Dog</td>
-                        <td>18</td>
-                    </tr>
-                    <tr>
-                        <td>Ferret</td>
-                        <td>12</td>
-                    </tr>
-                    <tr>
-                        <td>Gerbil</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>Goldfish</td>
-                        <td>25</td>
-                    </tr>
-                    <tr>
-                        <td>Guinea pig</td>
-                        <td>8</td>
-                    </tr>
-                    <tr>
-                        <td>Hamster</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>Horse</td>
-                        <td>62</td>
-                    </tr>
-                    <tr>
-                        <td>Macaw</td>
-                        <td>64</td>
-                    </tr>
-                    <tr>
-                        <td>Mouse</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>Parrot, grey cheeked</td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>Parrot, African grey</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>Parrot, Amazon</td>
-                        <td>80</td>
-                    </tr>
-                    <tr>
-                        <td>Rabbit</td>
-                        <td>9</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-        <br>
-        <hr>
-        <div id='results'>
-            <p>Results:
-                <br>
-        </div>
-
-        <div class="wrapper" id="resultTable">
-            <table class="table table-bordered table-striped table-responsive">
-                <thead>
-                    <tr>
-                        <th>Pet Name</th>
-                        <th>Pet Type</th>
-                        <th>Average Lifespan (years)</th>
-                        <th>Pet Birthday</th>
-                        <th>Pet Age (human years)</th>
-                        <th>Pet Age (pet years)</th>
-                        <th>Length of Pet Year (days)</th>
-                        <th>Next Relative Pet Birthday</th>
-                        <th>Time Until Next Pet Birthday (days)</th>
-                    </tr>
-                </thead>
-                <tbody id="petTable">
-                </tbody>
-            </table>
-        </div>
-
+          </div>
+        </form>
+      </div>
+      <!-- lifespan table -->
+      <div id='lifespanTableWrapper'>
+        <p id='lifespanTableHeading'>Life Expectancy of Popular Pets</p>
+        <table id='lifespanTable'>
+          <thead>
+            <tr>
+              <th>Pet</th>
+              <th>Life Expectancy (years)</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>Canary</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>Cat</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <td>Cockatoo</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Dog</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>Ferret</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Gerbil</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Goldfish</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>Guinea pig</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>Hamster</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Horse</td>
+            <td>62</td>
+          </tr>
+          <tr>
+            <td>Macaw</td>
+            <td>64</td>
+          </tr>
+          <tr>
+            <td>Mouse</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Parrot, grey cheeked</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Parrot, African grey</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Parrot, Amazon</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>Rabbit</td>
+            <td>9</td>
+          </tr>
+        </table>
+      </div>
     </div>
+  </div>
 
-    <footer>
-        <p>Copyright Jeff Hartman 2018</p>
-    </footer>
+  <div class="wrapper" id="resultTable">
+    <div id='results'>
+      <p>Results:<br></p>
+    </div>
+    <table class="table table-bordered table-striped table-responsive">
+      <thead>
+        <tr>
+          <th>Pet Name</th>
+          <th>Pet Type</th>
+          <th>Average Lifespan<br>(in human years)</th>
+          <th>Pet Actual<br>Birthday</th>
+          <th>Pet Age<br>(in human years)</th>
+          <th>Pet Age<br>(in pet years)</th>
+          <th>Length of<br>Pet Year (days)</th>
+          <th>Next Relative<br>Pet Birthday</th>
+          <th>Time Until<br>Next Pet Birthday (days)</th>
+        </tr>
+      </thead>
+      <tbody id="petTable">
+      </tbody>
+    </table>
+  </div>
 
-    <script src="assets/javascript/javascript.js"></script>
+  <footer>
+    <p>Copyright Jeff Hartman 2018</p>
+  </footer>
+
+<script src="assets/javascript/javascript.js"></script>
+
 </body>
 
 </html>
